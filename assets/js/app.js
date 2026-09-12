@@ -20,13 +20,13 @@ xhr.onload = function(){
         let res = '';
 
         data.forEach(ele => {
-            res += `<li class="list-group-item d-flex justify-content-between align-items-center" id="${ele.id}">
+            res += `<li class="list-group-item d-flex justify-content-between align-items-center title" id="${ele.id}">
                         <h5 class="text-left m-3">${ele.userId}</h5>
-                        <h6 class="mr-auto title">${ele.title} : <span class="badge ${ele.completed === true ? "badge-success" : "badge-danger"}">${ele.completed === true ? "completed" : "Pending"}</span></h6>
+                        <h6 class="mr-auto">${ele.title} : <span class="badge ${ele.completed === true ? "badge-success" : "badge-danger"}">${ele.completed === true ? "completed" : "Pending"}</span></h6>
 
                          <div>
-                            <button class="btn btn-sm btn-warning">Edit</button>
-                            <button class="btn btn-sm btn-danger">Remove</button>
+                            <button class="btn btn-sm btn-warning" role="button">Edit</button>
+                            <button class="btn btn-sm btn-danger" role="button">Remove</button>
                          </div>
                         
                     </li>`
