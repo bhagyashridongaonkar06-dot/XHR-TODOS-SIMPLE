@@ -1,7 +1,7 @@
-.title{
+ul li{
     transition: all ease-in-out .4s;
 }
 
-.title:hover{
+ul li:hover{
     transform: scale(1.03);
 }
